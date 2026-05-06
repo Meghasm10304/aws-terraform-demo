@@ -30,4 +30,5 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan
+        run: terraform plan -var="vpc_id=vpc-0ad08eff733772e77" -var='public_subnet_ids=["subnet-02e73693b157f86a6","subnet-071ed737e3474978e"]'
+
