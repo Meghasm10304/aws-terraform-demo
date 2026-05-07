@@ -36,16 +36,18 @@ This project solves it by automating infrastructure provisioning and deployment 
    cd <repo-name>
 Initialize Terraform:
 
-bash
-terraform init
-Review the plan:
+   ```bash
+   terraform init
 
-bash
-terraform plan
+Review the plan:
+```bash
+   terraform plan
+
 Apply the configuration:
 
-bash
-terraform apply
+```bash
+   terraform apply
+
 Usage
 Running terraform apply provisions the infrastructure:
 
@@ -62,7 +64,7 @@ Monitoring resources (CloudWatch, CloudTrail, VPC Flow Logs, WAF)
 After deployment, Terraform outputs will include identifiers such as the ALB DNS name.
 Use the ALB DNS name to access the application.
 
-Architecture
+**Architecture**
 The architecture consists of:
 
 A VPC with public and private subnets
@@ -77,10 +79,10 @@ Monitoring and logging with CloudWatch, CloudTrail, and VPC Flow Logs
 
 Security enforced with IAM roles, security groups, and WAF
 
-Screenshots
+**Screenshots**
 (Add screenshots of AWS Console resources such as VPC, ALB, EC2 Auto Scaling Group, and CloudWatch dashboards.)
 
-Author
+**Author**
 Intern: Meghana M
 
 Email: meghasm1023@gmail.com
